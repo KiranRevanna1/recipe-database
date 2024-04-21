@@ -1,0 +1,35 @@
+// Import PrimeNG styles
+@import 'primeng/resources/themes/saga-blue/theme.css';
+@import 'primeng/resources/primeng.min.css';
+
+// Import PrimeIcons
+@import 'primeicons/primeicons.css';
+
+// Import PrimeFlex
+@import 'primeflex/primeflex.css';
+
+// Custom styles
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Add your custom styles here */

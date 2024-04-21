@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: KiranRevanna
+      POSTGRES_PASSWORD: adde252b-2e02-4920-853b-db81930a247e
+      POSTGRES_DB: recipes
+    ports:
+      - "5432:5432"

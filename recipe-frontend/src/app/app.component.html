@@ -1,0 +1,32 @@
+<!-- app.component.html -->
+
+<div style="text-align:center">
+  <h1>Welcome to Recipe Database!</h1>
+</div>
+
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>description</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let recipe of recipes">
+        <td>{{ recipe.name }}</td>
+        <td>
+          <ul>
+            <li *ngFor="let ingredient of recipe.description">{{ recipe.description }}</li>
+          </ul>
+        </td>
+        <td>
+          <button (click)="viewRecipe(recipe)">View</button>
+          <button (click)="editRecipe(recipe)">Edit</button>
+          <button (click)="deleteRecipe(recipe)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

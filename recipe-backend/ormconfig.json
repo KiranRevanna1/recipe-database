@@ -1,0 +1,12 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "KiranRevanna",
+    "password": "adde252b-2e02-4920-853b-db81930a247e",
+    "database": "recipes",
+    "entities": ["dist/**/*.entity{.ts,.js}"],
+    "synchronize": true,
+    "logging": true
+}
+  

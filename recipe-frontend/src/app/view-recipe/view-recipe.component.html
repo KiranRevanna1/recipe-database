@@ -1,0 +1,18 @@
+<div>
+    <h2>View Recipe</h2>
+    <div *ngIf="recipe">
+      <div>
+        <label>Name:</label>
+        <span>{{ recipe.name }}</span>
+      </div>
+      <div>
+        <label>Description:</label>
+        <span>{{ recipe.description }}</span>
+      </div>
+      <!-- Add more details here as needed -->
+    </div>
+    <div *ngIf="!recipe">
+      <p>No recipe found.</p>
+    </div>
+  </div>
+  

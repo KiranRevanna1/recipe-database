@@ -1,0 +1,13 @@
+<h2>Create Recipe</h2>
+<form (submit)="createRecipe()">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="newRecipe.name" name="name" required>
+  </div>
+  <div>
+    <label for="description">Description:</label>
+    <textarea id="description" [(ngModel)]="newRecipe.description" name="description" required></textarea>
+  </div>
+  <!-- Add other form fields as needed (e.g., ingredients, steps, etc.) -->
+  <button type="submit">Create Recipe</button>
+</form>
